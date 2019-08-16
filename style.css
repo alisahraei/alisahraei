@@ -1,10 +1,31 @@
 *{
   box-sizing: border-box;
 }
+@font-face{
+  font-family: 'IRANsans';
+  src: url(font/IRANSansWeb.ttf);
+}
+@font-face{
+  font-family: 'IRANsans-bold';
+  src: url(font/IRANSansWeb_Bold.ttf);
+}
 body{
+  font-family: 'IRANsans';
   background-image     : url(image/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg);
   background-repeat    : no-repeat;
   background-size      : cover;
   background-attachment: fixed;
   background-position  : center;
+  position             : relative;
+}
+div.name{
+  position   : absolute;
+  font-family: 'IRANsans-bold';
+  top        : 50%;
+  bottom     : auto;
+  right      : 10%;
+  left       : auto;
+  /*transform  : translate(-50%, -50%);*/
+  color      : white;
+  font-size  : 50px;
 }
