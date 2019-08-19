@@ -9,38 +9,78 @@
   font-family: 'IRANsans-bold';
   src        : url(font/IRANSansWeb_Bold.ttf);
 }
-@keyframes start{
-  0% {right  : -20%; left: auto;}
-  100% {right: 20%; left: auto;}
+@keyframes example {
+  0%   {
+    -webkit-transform: translate(0%, 70%);opacity: 0;
+    -moz-transform   : translate(0%, 70%);opacity: 0;
+    -o-transform     : translate(0%, 70%);opacity: 0;
+    -ms-transform    : translate(0%, 70%);opacity: 0;
+    -sand-transform  : translate(0%, 70%);opacity: 0;
+    transform        : translate(0%, 70%);opacity: 0;
+    }
+  100% {
+    -webkit-transform: translate(0%, -7%);opacity: 1;
+    -moz-transform   : translate(0%, -7%);opacity: 1;
+    -o-transform     : translate(0%, -7%);opacity: 1;
+    -ms-transform    : translate(0%, -7%);opacity: 1;
+    -sand-transform  : translate(0%, -7%);opacity: 1;
+    transform        : translate(0%, -7%);opacity: 1;
+    visibility: visible;
+    }
 }
 body{
-  font-family          : 'IRANsans';
+  font-family: 'IRANsans';
+  position   : relative;
+  height     : 100vh;
+  width      : 100%;
+}
+div.back{
+  min-height: 100vh;
+  width     : 100%;
+  position  : relative;
+  overflow  : hidden;
+}
+div.min{
+  position             : absolute;
+  top                  : 0;
+  left                 : 0;
+  height               : 100vh;
+  width                : 100%;
+  opacity              : 0;
+  -webkit-transition   : transform 8s ease 0s,opacity 10s ease 10s;
+  -moz-transition      : transform 8s ease 0s,opacity 10s ease 10s;
+  -ms-transition       : transform 8s ease 0s,opacity 10s ease 10s;
+  -o-transition        : transform 8s ease 0s,opacity 10s ease 10s;
+  -sand-transition     : transform 8s ease 0s,opacity 10s ease 10s;
+  transition           : transform 8s ease 0s,opacity 10s ease 10s;
+  /* -webkit-animation : bounceIn 12s linear infinite; */
+  -moz-animation       : bounceIn 12s linear infinite;
+  -ms-animation        : bounceIn 12s linear infinite;
+  -o-animation         : bounceIn 12s linear infinite;
+  -sand-animation      : bounceIn 12s linear infinite;
+  animation            : bounceIn 12s linear infinite;
   background-image     : url(image/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg);
   background-repeat    : no-repeat;
   background-size      : cover;
   background-attachment: fixed;
   background-position  : center;
-  position             : relative;
-}
-div.pro{
-  height       : 200px;
-  width        : 200px;
-  /*border     : 1px solid white;*/
-  border-radius: 50%;
-  position     : absolute;
-  top          : 20%;
-  right        : 10%;
 }
 div.pro img{
-  height       : 200px;
-  width        : 200px;
-  border       : 2px solid white;
-  border-radius: 50%;
-  position     : absolute;
-  top          : 35%;
-  right        : 10%;
+  height            : 200px;
+  width             : 200px;
+  border            : 2px solid white;
+  border-radius     : 50%;
+  position          : absolute;
+  top               : 10%;
+  right             : 10%;
+  transform         : translate(0%, -7%);
+/*  animation-name    : example;
+  animation-duration: 3.5s;
+  animation-delay : 0.5s;*/
+  visibility: hidden;
+  animation: 3.5s ease 0.5s normal forwards 1 example;
 }
-.main figure{
+.main div{
   position          : absolute;
   height            : 100vh;
   width             : 100%;
@@ -49,13 +89,93 @@ div.pro img{
   animation-duration: 1s;
   /*animation-delay : 1s;*/
 }
-.main figure h1{
-  position          : absolute;
-  font-size         : 50px;
-  right             : 20%;
-  top               : 25%;
-  color             : white;
-  animation-name    : start;
-  animation-duration: 1s;
-  /*animation-delay : 2s;*/
+div.main h1{
+  position : absolute;
+  font-size: 50px;
+  right    : 20%;
+  top      : 28%;
+  color    : white;
+  animation: 3s ease 1s normal forwards 1 example;
+  visibility: hidden;
+}
+div.main h5{
+  position : absolute;
+  font-size: 30px;
+  right    : 20%;
+  top      : 35%;
+  color    : #e0a80d;
+  animation: 3s ease 1.5s normal forwards 1 example;
+  visibility: hidden;
+}
+div.main h1 span{
+  font-weight: bold;
+}
+@-webkit-keyframes bounceIn {
+  0%
+  {
+    opacity          :1;
+    -webkit-transform:scale(1);
+    -moz-transform   :scale(1);
+    -ms-transform    :scale(1);
+    -o-transform     :scale(1);
+    -sand-transform  :scale(1);
+    transform        :scale(1)
+  }
+
+  50%
+  {
+    opacity          :1;
+    -webkit-transform:scale(1.2);
+    -moz-transform   :scale(1.2);
+    -ms-transform    :scale(1.2);
+    -o-transform     :scale(1.2);
+    -sand-transform  :scale(1.2);
+    transform        :scale(1.2)
+  }
+
+  100%
+  {
+    opacity          :1;
+    -webkit-transform:scale(1);
+    -moz-transform   :scale(1);
+    -ms-transform    :scale(1);
+    -o-transform     :scale(1);
+    -sand-transform  :scale(1);
+    transform        :scale(1)
+  }
+}
+
+@keyframes bounceIn{
+
+0%
+{
+  opacity          :1;
+  -webkit-transform:scale(1);
+  -moz-transform   :scale(1);
+  -ms-transform    :scale(1);
+  -o-transform     :scale(1);
+  -sand-transform  :scale(1);
+  transform        :scale(1)
+}
+
+50%
+{
+  opacity          :1;
+  -webkit-transform:scale(1.2);
+  -moz-transform   :scale(1.2);
+  -ms-transform    :scale(1.2);
+  -o-transform     :scale(1.2);
+  -sand-transform  :scale(1.2);
+  transform        :scale(1.2)
+}
+
+100%
+{
+  opacity          :1;
+  -webkit-transform:scale(1);
+  -moz-transform   :scale(1);
+  -ms-transform    :scale(1);
+  -o-transform     :scale(1);
+  -sand-transform  :scale(1);
+  transform        :scale(1)
 }
