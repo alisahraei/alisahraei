@@ -118,8 +118,8 @@ a.icon1{
   position  : absolute;
   color     : white;
   bottom    : 10%;
-  left      : 12.5%;
-  animation : 3s ease 1.5s normal forwards 1 example;
+  left      : 13.5%;
+  animation : 3s ease 1.3s normal forwards 1 example;
   visibility: hidden;
 }
 a.icon2{
@@ -127,8 +127,8 @@ a.icon2{
   position  : absolute;
   color     : white;
   bottom    : 10%;
-  left      : 10%;
-  animation : 3s ease 1.8s normal forwards 1 example;
+  left      : 11%;
+  animation : 3s ease 1.5s normal forwards 1 example;
   visibility: hidden;
 }
 a.icon3{
@@ -136,8 +136,8 @@ a.icon3{
   position  : absolute;
   color     : white;
   bottom    : 10%;
-  left      : 7.5%;
-  animation : 3s ease 2.1s normal forwards 1 example;
+  left      : 8.5%;
+  animation : 3s ease 1.7s normal forwards 1 example;
   visibility: hidden;
 }
 a.icon4{
@@ -145,8 +145,17 @@ a.icon4{
   position  : absolute;
   color     : white;
   bottom    : 10%;
-  left      : 5%;
-  animation : 3s ease 2.4s normal forwards 1 example;
+  left      : 6%;
+  animation : 3s ease 1.9s normal forwards 1 example;
+  visibility: hidden;
+}
+a.icon5{
+  font-size : 25px;
+  position  : absolute;
+  color     : white;
+  bottom    : 10%;
+  left      : 3.5%;
+  animation : 3s ease 2.1s normal forwards 1 example;
   visibility: hidden;
 }
 @-webkit-keyframes bounceIn {
