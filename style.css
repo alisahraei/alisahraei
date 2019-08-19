@@ -110,6 +110,45 @@ div.main h5{
 div.main h1 span{
   font-weight: bold;
 }
+a span:hover{
+  color: #3897f0;
+}
+a.icon1{
+  font-size : 25px;
+  position  : absolute;
+  color     : white;
+  bottom    : 10%;
+  left      : 12.5%;
+  animation : 3s ease 1.5s normal forwards 1 example;
+  visibility: hidden;
+}
+a.icon2{
+  font-size : 25px;
+  position  : absolute;
+  color     : white;
+  bottom    : 10%;
+  left      : 10%;
+  animation : 3s ease 1.8s normal forwards 1 example;
+  visibility: hidden;
+}
+a.icon3{
+  font-size : 25px;
+  position  : absolute;
+  color     : white;
+  bottom    : 10%;
+  left      : 7.5%;
+  animation : 3s ease 2.1s normal forwards 1 example;
+  visibility: hidden;
+}
+a.icon4{
+  font-size : 25px;
+  position  : absolute;
+  color     : white;
+  bottom    : 10%;
+  left      : 5%;
+  animation : 3s ease 2.4s normal forwards 1 example;
+  visibility: hidden;
+}
 @-webkit-keyframes bounceIn {
   0%
   {
