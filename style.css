@@ -66,19 +66,19 @@ div.min{
   background-position  : center;
 }
 div.pro img{
-  height            : 200px;
-  width             : 200px;
-  border            : 2px solid white;
-  border-radius     : 50%;
-  position          : absolute;
-  top               : 10%;
-  right             : 10%;
-  transform         : translate(0%, -7%);
-/*  animation-name    : example;
-  animation-duration: 3.5s;
-  animation-delay : 0.5s;*/
-  visibility: hidden;
-  animation: 3.5s ease 0.5s normal forwards 1 example;
+  height       : 200px;
+  width        : 200px;
+  border       : 2px solid white;
+  border-radius: 50%;
+  position     : absolute;
+  top          : 10%;
+  right        : 10%;
+  transform    : translate(0%, -7%);
+  visibility   : hidden;
+  animation    : 3.5s ease 0.5s normal forwards 1 example;
+}
+div.pro img:hover{
+
 }
 .main div{
   position          : absolute;
@@ -90,21 +90,21 @@ div.pro img{
   /*animation-delay : 1s;*/
 }
 div.main h1{
-  position : absolute;
-  font-size: 50px;
-  right    : 20%;
-  top      : 28%;
-  color    : white;
-  animation: 3s ease 1s normal forwards 1 example;
+  position  : absolute;
+  font-size : 50px;
+  right     : 20%;
+  top       : 28%;
+  color     : white;
+  animation : 3s ease 1s normal forwards 1 example;
   visibility: hidden;
 }
 div.main h5{
-  position : absolute;
-  font-size: 30px;
-  right    : 20%;
-  top      : 35%;
-  color    : #e0a80d;
-  animation: 3s ease 1.5s normal forwards 1 example;
+  position  : absolute;
+  font-size : 30px;
+  right     : 20%;
+  top       : 35%;
+  color     : #e0a80d;
+  animation : 3s ease 1.5s normal forwards 1 example;
   visibility: hidden;
 }
 div.main h1 span{
