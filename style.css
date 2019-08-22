@@ -71,14 +71,21 @@ div.pro img{
   border       : 2px solid white;
   border-radius: 50%;
   position     : absolute;
-  top          : 10%;
-  right        : 10%;
+  top          : 20%;
+  right        : 18%;
   transform    : translate(0%, -7%);
   visibility   : hidden;
   animation    : 3.5s ease 0.5s normal forwards 1 example;
 }
 div.pro img:hover{
 
+}
+div.result{
+  position: absolute;
+  min-width: 1000px;
+  min-height: 500px;
+  top: 0;
+  right: 0;
 }
 .main div{
   position          : absolute;
@@ -92,8 +99,8 @@ div.pro img:hover{
 div.main h1{
   position  : absolute;
   font-size : 50px;
-  right     : 20%;
-  top       : 28%;
+  right     : 37%;
+  top       : 54%;
   color     : white;
   animation : 3s ease 1s normal forwards 1 example;
   visibility: hidden;
@@ -101,8 +108,8 @@ div.main h1{
 div.main h5{
   position  : absolute;
   font-size : 30px;
-  right     : 20%;
-  top       : 35%;
+  right     : 37%;
+  top       : 67%;
   color     : #e0a80d;
   animation : 3s ease 1.5s normal forwards 1 example;
   visibility: hidden;
