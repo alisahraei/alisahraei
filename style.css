@@ -25,7 +25,7 @@
     -ms-transform    : translate(0%, -7%);opacity: 1;
     -sand-transform  : translate(0%, -7%);opacity: 1;
     transform        : translate(0%, -7%);opacity: 1;
-    visibility: visible;
+    visibility       : visible;
     }
 }
 body{
@@ -81,11 +81,11 @@ div.pro img:hover{
 
 }
 div.result{
-  position: absolute;
-  min-width: 1000px;
+  position  : absolute;
+  min-width : 1000px;
   min-height: 500px;
-  top: 0;
-  right: 0;
+  top       : 0;
+  right     : 0;
 }
 .main div{
   position          : absolute;
@@ -120,50 +120,35 @@ div.main h1 span{
 a span:hover{
   color: #3897f0;
 }
-a.icon1{
-  font-size : 25px;
-  position  : absolute;
-  color     : white;
-  bottom    : 10%;
-  left      : 13.5%;
-  animation : 3s ease 1.3s normal forwards 1 example;
-  visibility: hidden;
+div.about{
+  position      : absolute;
+  left          : 3%;
+  bottom        : 10%;
+  display       : flex;
+  flex-direction: row-reverse;
 }
-a.icon2{
+a.icon{
   font-size : 25px;
-  position  : absolute;
+  position  : relative;
   color     : white;
-  bottom    : 10%;
-  left      : 11%;
-  animation : 3s ease 1.5s normal forwards 1 example;
+  animation : 3s ease normal forwards 1 example;
   visibility: hidden;
+  margin    : 0 10px;
 }
-a.icon3{
-  font-size : 25px;
-  position  : absolute;
-  color     : white;
-  bottom    : 10%;
-  left      : 8.5%;
-  animation : 3s ease 1.7s normal forwards 1 example;
-  visibility: hidden;
+a#icon1{
+  animation-delay: 1.3s;
 }
-a.icon4{
-  font-size : 25px;
-  position  : absolute;
-  color     : white;
-  bottom    : 10%;
-  left      : 6%;
-  animation : 3s ease 1.9s normal forwards 1 example;
-  visibility: hidden;
+a#icon2{
+  animation-delay: 1.5s;
 }
-a.icon5{
-  font-size : 25px;
-  position  : absolute;
-  color     : white;
-  bottom    : 10%;
-  left      : 3.5%;
-  animation : 3s ease 2.1s normal forwards 1 example;
-  visibility: hidden;
+a#icon3{
+  animation-delay: 1.7s;
+}
+a#icon4{
+  animation-delay: 1.9s;
+}
+a#icon5{
+  animation-delay: 2.1s;
 }
 @-webkit-keyframes bounceIn {
   0%
@@ -233,4 +218,9 @@ a.icon5{
   -o-transform     :scale(1);
   -sand-transform  :scale(1);
   transform        :scale(1)
+}
+@media (max-width: 500px){
+  div.min h1{
+    color: black;
+  }
 }
