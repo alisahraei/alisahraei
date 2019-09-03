@@ -179,7 +179,7 @@ div.main h5{
   font-size : 30px;
   right     : 37%;
   top       : 68%;
-  color     : #e0a80d;
+  color     : #FFC501;
   animation : 3s ease 1.5s normal forwards 1 example;
   visibility: hidden;
 }
