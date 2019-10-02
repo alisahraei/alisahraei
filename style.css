@@ -234,22 +234,39 @@ a#icon5{
     min-width : 100vw;
     max-width : 100vw;
   }
+  div.pro{
+    width     : 100vw;
+    height    : 100vh;
+    right     : 0;
+    text-align: center;
+  }
   div.pro img{
-    height   : 100px;
-    width    : 100px;
-    left     : auto;
-    right    : 50%;
-    transform: translate(-50%, -50%);
+    height           : 100px;
+    width            : 100px;
+    /*right          : 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform   : translate(-50%, -50%);
+    -o-transform     : translate(-50%, -50%);*/
+    position         : relative;
+    right            : 0;
+    margin-right     : auto;
+    margin-left      : auto;
   }
   h1 span{
     font-size: 20px;
   }
   div.main h1{
-    top: 42%;
+    top       : 42%;
+    width     : 100vw;
+    right     : 0;
+    text-align: center;
   }
   div.main h5{
-    font-size: 13px;
-    top      : 53%;
+    font-size : 13px;
+    top       : 52%;
+    width     : 100vw;
+    right     : 0;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1099px) and (min-width: 750px){
