@@ -50,10 +50,10 @@ div.main{
 	margin   : 0 auto;
 	font-size: 1.5em;
 }
-div.post1{
+div.note1{
 	margin-bottom: 20px;
 }
-hr.hr-post{
+hr.hr-note{
 	height: 1px;
 	background-color: #7C7C7C;
 }
