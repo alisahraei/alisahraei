@@ -150,11 +150,11 @@ div.pro img:hover{
 
 }
 div.result{
-  position  : absolute;
-  width : 1000px;
-  height: 500px;
-  top       : 0;
-  right     : 0;
+  position: absolute;
+  width   : 1000px;
+  height  : 500px;
+  top     : 0;
+  right   : 0; 
 }
 .main div{
   position          : absolute;
@@ -218,6 +218,9 @@ a#icon4{
 }
 a#icon5{
   animation-delay: 2.1s;
+}
+a#icon6{
+  animation-delay: 2.3s;
 }
 
 @media screen and (max-width: 749px){
