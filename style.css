@@ -219,9 +219,6 @@ a#icon4{
 a#icon5{
   animation-delay: 2.1s;
 }
-a#icon6{
-  animation-delay: 2.3s;
-}
 
 @media screen and (max-width: 749px){
   div.about{
